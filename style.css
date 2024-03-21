@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cars {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.item {
+    width: 20%;
+    height: 80vh;
+    position: relative;
+    transition: 500ms;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.item h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+}
+
+.item.active h2 {
+    opacity: 1;
+}
+
+.item.active {
+    width: 50%;
+}
